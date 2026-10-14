@@ -237,10 +237,8 @@ export function parseFastCheck(value: unknown): T.Check {
   const details = checkDetails(object, "name");
   const state = string(object.state, "check.state").toUpperCase();
   const bucket = string(object.bucket, "check.bucket");
-  if (
-    bucket === "fail" ||
-    ["FAILURE", "ERROR", "ACTION_REQUIRED"].includes(state)
-  )
+  if (state === "ACTION_REQUIRED") return gateOr("failed", details, state);
+  if (bucket === "fail" || ["FAILURE", "ERROR"].includes(state))
     return { ...details, kind: "failed", reportedState: state };
   if (bucket === "pending") return gateOr("pending", details, state);
   if (bucket === "pass")
