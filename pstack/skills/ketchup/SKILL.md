@@ -18,7 +18,7 @@ An action item is a decision or step only the user can take, such as a product c
 
 ## Write the reply
 
-Keep the whole reply well under 150 words, counting the words inside visuals and tables. Use text only for what no visual can show, and never give a fact in both. Leave out work that changed nothing for the user. When words run short, cut from what happened before you cut from the action items.
+Keep the whole reply well under 150 words, counting the words inside visuals and tables. Use text only for what no visual can show, and never give a fact twice, in text or across visuals. Leave out work that changed nothing for the user. When words run short, cut from what happened before you cut from the action items.
 
 Open with one sentence that says how many things need the user, or that nothing does. If nothing happened and nothing waits on the user, say so and stop.
 
